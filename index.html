@@ -2,59 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pathways to Thrive</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Header / Navigation -->
-  <header>
-  <div class="header-top">
-    <h1>Pathways to Thrive</h1>
-    <div class="language-toggle">
-      <button class="lang-btn active">EN</button>
-      <span>|</span>
-      <button class="lang-btn">ES</button>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌍 Pathways to Thrive</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="success.html">Success Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+  <a class="nav-link" href="#" onclick="setLanguage('en')">EN</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#" onclick="setLanguage('es')">ES</a>
+</li>
+
+        </ul>
+      </div>
     </div>
-  </div>
-  
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
   </nav>
-</header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h2>Welcome to Pathways to Thrive</h2>
-    <p>A community-built guide to help immigrants adapt, grow, and succeed in the U.S.</p>
-    <p><em>For immigrants, by immigrants.</em></p>
-  </section>
+  <header class="tm-hero">
+    <div class="container text-center">
+      <h1 class="tm-hero-title" data-i18n="heroTitle">Welcome to Pathways to Thrive</h1>
+      <p class="tm-hero-subtitle" data-i18n="heroSubtitle">
+  A community-built guide to help immigrants adapt, grow, and succeed in the U.S.
+  <br />
+  <em>For immigrants, by immigrants.</em>
+</p>
+      <a href="resources.html" class="btn-hero" data-aos="zoom-in" data-aos-delay="400">Explore Resources</a>
+    </div>
+  </header>
+
+ <!-- About Section -->
+<section class="home-about-section">
+  <div class="home-about-wrapper">
+    <div class="home-about-text">
+      <h2>👋 About Me</h2>
+      <p>Hello! I’m Edward, an immigrant and educator passionate about helping others find the tools they need to thrive. I created this platform to guide others through the same process I went through — learning, working, and building a life in the U.S.</p>
+      <p>Through this site, I share real stories, practical resources, and a community-centered space built for and by immigrants.</p>
+      <a href="about.html" class="btn-hero">Learn More About Me</a>
+    </div>
+    <div class="home-about-image">
+      <img src="assets/edward-home.png" alt="Edward Cordero" />
+    </div>
+  </div>
+</section>
+
+
+
 
   <!-- Mission Section -->
-  <section class="mission">
-    <h3>Our Mission</h3>
-    <p>Empowering immigrant communities by connecting them to the knowledge, resources, and opportunities needed to build a better life in the U.S.</p>
-  </section>
+  <section class="tm-section tm-bg-light tm-py-5">
+  <div class="container mission-flex">
+    
+    <div class="mission-image">
+      <img src="assets/mision.png" alt="Our Mission" />
+    </div>
 
-  <!-- Success Story Preview -->
-  <section class="success-story">
-    <h3>Real Stories</h3>
-    <blockquote>
-      “When I first came to New York, I didn’t know where to start. This site helped me find housing, job training, and a community that welcomed me.”
-      <br><strong>- Ana, Dominican Republic 🇩🇴</strong>
-    </blockquote>
-  </section>
+    <div class="mission-text">
+      <h2 class="tm-section-title">🎯 Our Mission</h2>
+      <p class="tm-section-text">
+        Empowering immigrant communities by connecting them to the knowledge, resources, and opportunities needed to build a better life in the U.S.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  
+
+  <!-- Success Highlight -->
+<section class="tm-section">
+  <div class="container real-stories-wrapper">
+
+    <!-- Texto a la izquierda -->
+    <div class="real-stories-text" data-aos="fade-up">
+      <h2 class="tm-section-title">📖 Real Stories</h2>
+      <blockquote>
+        “When I first came to New York, I didn’t know where to start. This site helped me find housing, job training, and a community that welcomed me.”
+      </blockquote>
+      <p><strong>- Ana, Dominican Republic 🇩🇴</strong></p>
+    </div>
+
+    <!-- Imagen a la derecha -->
+    <div class="real-stories-image">
+      <img src="assets/inmigrant.png" alt="Immigrant Story" />
+    </div>
+
+  </div>
+</section>
+
+
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Pathways to Thrive</p>
-    <p><a href="#">English</a> | <a href="#">Español</a></p>
+  <footer class="tm-footer text-center">
+    <p>© 2025 Pathways to Thrive | For Immigrants, By Immigrants</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+  const translations = {
+    en: {
+      heroTitle: "Welcome to Pathways to Thrive",
+      heroSubtitle: "A community-built guide to help immigrants adapt, grow, and succeed in the U.S.",
+      exploreResources: "Explore Resources",
+      // Agrega más claves aquí...
+    },
+    es: {
+      heroTitle: "Bienvenido a Caminos para Prosperar",
+      heroSubtitle: "Una guía creada por la comunidad para ayudar a los inmigrantes a adaptarse, crecer y prosperar en EE.UU.",
+      exploreResources: "Explorar Recursos",
+      // Agrega más claves aquí...
+    }
+  };
+
+  function setLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+    localStorage.setItem("language", lang);
+  }
+
+  // Detectar idioma guardado
+  const savedLang = localStorage.getItem("language") || "en";
+  setLanguage(savedLang);
+</script>
+
 
 </body>
 </html>
